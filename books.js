@@ -1,9 +1,9 @@
 // Write a function that takes nested arrays and turns it into nested objects.
 //
-// var books = [
-//   ["Learn to Program", "Chris Pine", 1934356360],
-//   ["Eloquent Javascript", "Marijn Haverbeke", 1593275846]
-// ]
+var books = [
+  ["Learn to Program", "Chris Pine", 1934356360],
+  ["Eloquent Javascript", "Marijn Haverbeke", 1593275846]
+]
 //
 // bookData(books)
 // //-> {
@@ -19,21 +19,11 @@
 //   }
 // }
 
-var books = [
-  ["Learn to Program", "Chris Pine", 1934356360],
-  ["Eloquent Javascript", "Marijn Haverbeke", 1593275846]
-]
+var bookData = function() {
 
-var bookData = function(array){
-  bookObj = {}
-  array.forEach(function(book){
-    bookObj[book[2]] = {
-      "title": book[0],
-      "author": book[1],
-      "isbn10": book[2]
-    };
-  });
-  return bookObj;
 };
 
-console.log(bookData(books));
+
+module.exports = {
+  bookData: bookData
+}
