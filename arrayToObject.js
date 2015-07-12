@@ -1,34 +1,13 @@
 // Make a function that will take a dog array and make an object. Like so:
+// { 'German Shepherd': { size: '90 lbs.', 'bred for': 'Work' },
+//   Pointer: { size: '40 lbs.', 'bred for': 'Hunting' },
+//   Corgi: { size: '30 lbs.', 'bred for': 'Awesomeness' } }
+
+var dogArray = function(dogs) {
+  
+};
 
 
-var dogs = [
-  ["German Shepherd", "90 lbs.", "Work"],
-  ["Pointer", "40 lbs.", "Hunting"],
-  ["Corgi", "30 lbs.", "Awesomeness"]
-];
-
-var dogArray = function(dogs){
-  dogObject = {}
-  dogs.forEach(function(dog){
-    dogObject[dog[0]] = {
-      "size": dog[1],
-      "bred for": dog[2]
-    }
-  });
-  return dogObject;
+module.exports = {
+  dogArray: dogArray
 }
-
-var dogArray = function(dogs){
-  dogObject = {}
-  for (var i = 0; i < dogs.length; i++) {
-    dogObject[dogs[i][0]] = {
-      "size": dogs[i][1],
-      "bred for": dogs[i][2]
-    }
-  }
-  return dogObject;
-}
-
-
-
-console.log(dogArray(dogs));
