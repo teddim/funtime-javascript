@@ -20,7 +20,7 @@ var books = [
 // }
 
 var bookData = function() {
-
+  return {};
 };
 
 

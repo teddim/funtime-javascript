@@ -7,8 +7,10 @@
  * // => 9
  */
 
-var sum = function(){
-
+var sum = function(array){
+  return array.reduce(function(total, num) {
+    return total + num;
+  })
 }
 
 

@@ -9,8 +9,16 @@
  *
  */
 
-var avg = function(){
+var avg = function(array){
+  // var total = 0;
+  // array.forEach(function(num){
+  //   total += num;
+  // })
+  // return total/array.length;
 
+  return array.reduce(function(total, num) {
+    return total + num;
+  }, 0)/array.length;
 }
 
 module.exports = {
